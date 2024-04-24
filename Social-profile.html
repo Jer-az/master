@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="social-profile.css">
+	<title>I code this challange</title>
+</head>
+<body>
+	<div class="container">
+	<img src="C:\Users\JER\Documents\html\images\avatar-jessica.jpeg">
+	<h1 style="font-size: 20px">Jessica Randall</h1>
+	<p class="location" style="color: yellow; font-size: 11px">London, United Kingdom</p>
+	<q>Front-end devloper and avid reader</q>
+	<section>
+	<button>Github</button>
+	<button>Front-end Mentor</button>
+	<button>Linkedin</button>
+	<button>X</button>
+	<button>Instagram</button>
+	</section>
+	</div>
+	<button id="About" onclick= "time()">About me</button>
+	<p class="text">About me</p>
+
+	<script>
+		function time(){
+		if(document.querySelector('.text').innerHTML === "About me"){
+			document.querySelector('.text').innerHTML= "Outstanding cool g";
+		}
+		else{
+			document.querySelector('.text').innerHTML= time();	
+		}
+	}
+	</script>
+</body>
+</html>
